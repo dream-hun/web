@@ -1,14 +1,9 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -33,19 +28,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button 
-              className="btn-hero"
-              onClick={() => scrollToSection('#projects')}
-            >
-              View My Work
+            <Button className="btn-hero" asChild>
+              <Link to="/talks">View My Talks</Link>
             </Button>
             
             <Button 
               variant="outline" 
               className="border-border/50 hover:border-primary/50 transition-colors"
-              onClick={() => scrollToSection('#contact')}
+              asChild
             >
-              Get In Touch
+              <Link to="/contact">Get In Touch</Link>
             </Button>
           </div>
 
@@ -78,12 +70,12 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 float">
-          <button 
-            onClick={() => scrollToSection('#about')}
-            className="p-2 rounded-full border border-border/30 hover:border-primary/50 transition-colors"
+          <Link 
+            to="/about"
+            className="inline-block p-2 rounded-full border border-border/30 hover:border-primary/50 transition-colors"
           >
             <ArrowDown className="h-5 w-5 text-muted-foreground" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
