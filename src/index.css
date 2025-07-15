@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base dark tech theme */
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Black and white theme */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Tech blue primary */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 84% 4.9%;
-    --primary-glow: 217 91% 70%;
+    /* White primary */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 3%;
+    --primary-glow: 0 0% 90%;
 
-    /* Subtle secondary */
-    --secondary: 215 28% 17%;
-    --secondary-foreground: 210 40% 98%;
+    /* Gray secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 215 28% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Purple accent */
-    --accent: 263 83% 57%;
-    --accent-foreground: 210 40% 98%;
-    --accent-glow: 263 83% 67%;
+    /* Light gray accent */
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 3%;
+    --accent-glow: 0 0% 75%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 0% 20%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 215 28% 17%;
-    --input: 215 28% 17%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 98%;
 
     --radius: 0.75rem;
 
